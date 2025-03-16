@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Ads Integrations -->
-    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2956627327821416" crossorigin="anonymous"></script>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kumar Brothers Company Pvt Ltd - Advanced Website</title>
@@ -14,21 +12,18 @@
             box-sizing: border-box;
             background-color: #f4f4f4;
         }
-
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
         }
-
         nav {
             display: flex;
             justify-content: center;
             background-color: #444;
             padding: 0.5em;
         }
-
         nav a {
             color: #fff;
             text-decoration: none;
@@ -37,21 +32,17 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-
         nav a:hover {
             background-color: #555;
         }
-
         section {
             padding: 2em;
         }
-
         .service-container {
             display: flex;
             flex-wrap: wrap;
             gap: 1em;
         }
-
         .service-item {
             flex: 1 1 calc(33.333% - 2em);
             background-color: #fff;
@@ -60,11 +51,9 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-
         .service-item:hover {
             transform: translateY(-10px);
         }
-
         .service-content {
             display: none;
             padding: 1em;
@@ -73,11 +62,9 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 1em;
         }
-
         .service-content.active {
             display: block;
         }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -85,16 +72,6 @@
             padding: 1em 0;
             position: relative;
             width: 100%;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-
-            .service-item {
-                flex: 1 1 100%;
-            }
         }
         .ad-container {
             margin: 20px 0;
@@ -114,10 +91,17 @@
             color: #666;
             font-style: italic;
         }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            .service-item {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Kumar Brothers Company Pvt Ltd</h1>
         <p>Consultancy Services</p>
@@ -137,13 +121,15 @@
         <h2>Welcome to Kumar Brothers Consultancy</h2>
         <p>Your trusted partner for business solutions.</p>
     </section>
-<!-- Ad Container -->
+
+    <!-- Ad Container -->
     <div class="ad-container">
         <iframe src="allads.html" title="Ads" loading="lazy" onerror="showFallback()"></iframe>
         <div class="ad-fallback" id="ad-fallback">
             Ads failed to load. Please refresh the page or check your internet connection.
         </div>
     </div>
+
     <section id="services">
         <h2>Our Services</h2>
         <div class="service-container">
@@ -211,9 +197,7 @@
             // Show the selected service content
             document.getElementById(serviceId).classList.add('active');
         }
-    </script>
 
-    <script>
         // Show fallback message if iframe fails to load
         function showFallback() {
             document.getElementById('ad-fallback').style.display = 'block';
